@@ -12,7 +12,7 @@ class ShareBillForm(forms.Form):
                                                                   'min': 1}))
     TIP_OPTIONS = (('', ''), (0, '0 tip! Really bad service'), (5, '5%'), (10, '10%, the standard!'),
                    (15, '15%'), (20, '20%'), ('OTHER', 'Not feeling it, let me choose another!'))
-    tip = forms.ChoiceField(choices=(TIP_OPTIONS), widget=forms.Select(attrs={'id': 'tip',
+    tip = forms.ChoiceField(choices=TIP_OPTIONS, widget=forms.Select(attrs={'id': 'tip',
                                                                               'class': 'form-select',
                                                                               'onchange': 'checkTip()'}))
     custom_tip = forms.IntegerField(widget=forms.TextInput(attrs={'id': 'custom_tip',
