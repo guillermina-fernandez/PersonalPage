@@ -1,4 +1,4 @@
-This is my personal page, created with Django. 
+This is my personal page, created with Django.
 
 I created this project as a more interactive way of showing my CV and other projects I've been working on. 
 Also, I added a few "games" where I apply my programming skills: 
@@ -6,3 +6,6 @@ Also, I added a few "games" where I apply my programming skills: 
 * Secret Santa: You can add as many people as you want and it will randomly assign everybody another person to give a gift. 
 * Keep score: You can create teams and keep score by adding or subtracting points. It also has a stopwatch to track time. 
 * Vote City: A very simple poll about favourite cities.
+
+I have deployed it to PythonAnywhere:
+https://guillerminafernandez.pythonanywhere.com/guillerminafernandez/
