@@ -1,39 +1,23 @@
-var div_ops = document.getElementById("operations");
-var div_acc = document.getElementById("accounting");
-
 function showOps(){
-    div_acc.style.display = "none";
-    if (div_ops.style.display === "none"){
-        div_ops.style.display = "block";
+    accounting.style.display = "none";
+    if (operations.style.display === "none"){
+        operations.style.display = "block";
     } else {
-        div_ops.style.display = "none";
+        operations.style.display = "none";
     };
 };
 
 
 function showAcc(){
-    div_ops.style.display = "none";
-    if (div_acc.style.display === "none"){
-        div_acc.style.display = "block";
+    operations.style.display = "none";
+    if (accounting.style.display === "none"){
+        accounting.style.display = "block";
     } else {
-        div_acc.style.display = "none";
+        accounting.style.display = "none";
     };
 };
 
 function showpic(img_id){
-    var img_supplier = document.getElementById("img_supplier");
-    var img_vessel = document.getElementById("img_vessel");
-    var img_invoice = document.getElementById("img_invoice");
-    var img_payment = document.getElementById("img_payment");
-    var img_database = document.getElementById("img_database");
-    var img_login = document.getElementById("img_login");
-    var img_new_vessel = document.getElementById("img_new_vessel");
-    var img_vessel_op = document.getElementById("img_vessel_op");
-    var img_embarkment = document.getElementById("img_embarkment");
-    var img_disembarkment = document.getElementById("img_disembarkment");
-    var img_watchmen = document.getElementById("img_watchmen");
-    var img_health = document.getElementById("img_health");
-    var img_view = document.getElementById("img_view");
     img_supplier.style.display = "none";
     img_vessel.style.display = "none";
     img_invoice.style.display = "none";
@@ -55,21 +39,15 @@ function showpic(img_id){
 
 // Share the Bill
 
-var totalb = document.getElementById("bill_total");
-var shareb = document.getElementById("nbr_people");
-var lanothertipb = document.getElementById("label_anothertip");
-
 function checkTip(){
-    var tipb = document.getElementById("tip");
-    var customtipb = document.getElementById("custom_tip");
-    if (tipb.selectedIndex === 6){
-        lanothertipb.style.display = "block";
-        customtipb.style.display = "block";
-        customtipb.required = true;
+    if (tip.selectedIndex === 6){
+        label_anothertip.style.display = "block";
+        customtip.style.display = "block";
+        customtip.required = true;
     } else {
-        lanothertipb.style.display = "none";
-        customtipb.style.display = "none";
-        customtipb.required = false;
+        label_anothertip.style.display = "none";
+        customtip.style.display = "none";
+        customtip.required = false;
     };
 };
 
